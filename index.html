@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/lib.css" />
         <link rel="stylesheet" href="css/style.css" />
         <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/underscore-min.js"></script>
         <!--[if IE]>
          <style type="text/css">
                 .row1 .pic { padding:0; min-height:600px;}
@@ -143,19 +144,19 @@
             <div class="txt">
                 <h3>多维空间致力于海外技术的中国<br>加速及并购整合，拥有丰富的海外资源</h3>
                 <ul class="ul-icoli"> 
-                    <li>
+                    <li class="wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.3s">
                         <img src="images/q4.png" alt="">
                         <p>1.几位具有全球视野的中国投资家联合创立的跨国投资与成长平台</p>
                     </li>
-                    <li>
+                    <li class="wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s">
                        <img src="images/q5.png" alt="">
                        <p>2.以“科创中心+基金投资+跨境并购平台”为运营模式，致力于海外技术的中国加速及跨境并购整合</p>
                     </li>
-                    <li>
+                    <li class="wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.7s">
                        <img src="images/q6.png" alt="">
                        <p>3.率先聚焦北美、欧洲、以色列、日韩等地的投资机会</p>
                     </li>
-                    <li>
+                    <li class="wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.9s">
                        <img src="images/q7.png" alt="">
                        <p>4.国内政府机构与开发区、海外商会协会、创投私募的最佳伙伴</p>
                     </li>
@@ -249,6 +250,18 @@
                 });
                 wow.init();
             };
+
+            // 背景图 fixed/scroll
+            var $row1 = $('.row1')
+            var top = $row1.offset().top
+            function onScroll(e) {
+                if (window.scrollY >= top) {
+                    $row1[0].style.backgroundAttachment = 'fixed'
+                } else {
+                    $row1[0].style.backgroundAttachment = 'scroll'
+                }
+            }
+            window.onscroll = _.throttle(onScroll, 100)
         });
     </script>
 
