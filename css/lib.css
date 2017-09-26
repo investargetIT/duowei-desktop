@@ -133,7 +133,8 @@ img{max-width: 100%;
 
 .row1{
     overflow: hidden;
-    background: url(../images/q2.png) no-repeat center top #fbfbfb;
+    background: url(../images/q2.jpeg) no-repeat center top #fbfbfb;
+    background-attachment: fixed;
     margin-bottom: 60px;
 }
 .row1 .g-tit {
@@ -167,7 +168,7 @@ img{max-width: 100%;
 .row1 .txt{
     float: left;
     padding:3% 0 0 60px;
-
+    background: #f8f8f8;
 }
 .row1 .txt h3{
     font-size: 24px;
@@ -249,6 +250,7 @@ img{max-width: 100%;
     position: relative;
     padding-top: 66.73%;
     height: 0;
+    outline: none;
 }
 .m-news .item .pic img{position: absolute;top: 0;bottom: 0;left: 0;}
 .m-news .item .bor{

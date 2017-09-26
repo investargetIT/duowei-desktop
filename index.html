@@ -11,7 +11,6 @@
         <link rel="stylesheet" href="css/lib.css" />
         <link rel="stylesheet" href="css/style.css" />
         <script type="text/javascript" src="js/jquery.js"></script>
-        <script type="text/javascript" src="js/underscore-min.js"></script>
         <!--[if IE]>
          <style type="text/css">
                 .row1 .pic { padding:0; min-height:600px;}
@@ -79,7 +78,7 @@
             <div class="m-news">
                 <div class="item" >
                     <div class="pic">
-                        <a href="industry_base_jinqiao.html">
+                        <a href="javascript:">
                             <img src="images/zhao1.jpg" alt="">
                             <span class="bor"></span>
                         </a>
@@ -87,12 +86,12 @@
                     <div class="txt">
                         <h4>多维空间（绿地）科创中心</h4>
                         <p>西临南北高架，南近中环高速，这里，是静安<br />上海市江场路绿地中央广场3号楼4楼</p>
-                        <a href="check_in.html">我要入住</a>
+                        <a href="industry_base_jinqiao.html">我要入住</a>
                     </div>
                 </div>
                 <div class="item" >
                     <div class="pic">
-                        <a href="industry_base_jinqiao.html">
+                        <a href="javascript:">
                             <img src="images/zhao1.jpg" alt="">
                             <span class="bor"></span>
                         </a>
@@ -100,12 +99,12 @@
                     <div class="txt">
                         <h4>多维空间（绿地）科创中心</h4>
                         <p>西临南北高架，南近中环高速，这里，是静安<br />上海市江场路绿地中央广场3号楼4楼</p>
-                        <a href="check_in.html">我要入住</a>
+                        <a href="industry_base_jinqiao.html">我要入住</a>
                     </div>
                 </div>
                 <div class="item" >
                     <div class="pic">
-                        <a href="industry_base_jinqiao.html">
+                        <a href="javascript:">
                             <img src="images/zhao1.jpg" alt="">
                             <span class="bor"></span>
                         </a>
@@ -113,12 +112,12 @@
                     <div class="txt">
                         <h4>多维空间（绿地）科创中心</h4>
                         <p>西临南北高架，南近中环高速，这里，是静安<br />上海市江场路绿地中央广场3号楼4楼</p>
-                        <a href="check_in.html">我要入住</a>
+                        <a href="industry_base_jinqiao.html">我要入住</a>
                     </div>
                 </div>
                 <div class="item" >
                     <div class="pic">
-                        <a href="industry_base_jinqiao.html">
+                        <a href="javascript:">
                             <img src="images/zhao1.jpg" alt="">
                             <span class="bor"></span>
                         </a>
@@ -126,7 +125,7 @@
                     <div class="txt">
                         <h4>多维空间（绿地）科创中心</h4>
                         <p>西临南北高架，南近中环高速，这里，是静安<br />上海市江场路绿地中央广场3号楼4楼</p>
-                        <a href="check_in.html">我要入住</a>
+                        <a href="industry_base_jinqiao.html">我要入住</a>
                     </div>
                 </div>
             </div>
@@ -224,7 +223,9 @@
          slidesToShow: 1,
          slidesToScroll: 1,
          arrows: false,
-         dots: true
+         dots: true,
+         pauseOnFocus: false,
+         pauseOnHover: false,
        });
        // 小轮
         $('.m-news').slick({
@@ -250,18 +251,6 @@
                 });
                 wow.init();
             };
-
-            // 背景图 fixed/scroll
-            var $row1 = $('.row1')
-            var top = $row1.offset().top
-            function onScroll(e) {
-                if (window.scrollY >= top) {
-                    $row1[0].style.backgroundAttachment = 'fixed'
-                } else {
-                    $row1[0].style.backgroundAttachment = 'scroll'
-                }
-            }
-            window.onscroll = _.throttle(onScroll, 100)
         });
     </script>
 
