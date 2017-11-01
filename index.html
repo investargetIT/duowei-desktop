@@ -254,6 +254,31 @@
         });
     </script>
 
-    
+    <script type="text/javascript">
+        var $window = $(window);
+        var $banner = $('.banner');
+        $(document).ready(function() {
+            resizeBanner();
+        });
+        $(window).on('resize', function(e) {
+            resizeBanner();
+        });
+        function resizeBanner() {
+            var w = $window.width();
+            //body min-width 1200px
+            //banner width 1440px ~ 1920px
+            if (w <= 1200) {
+                $banner.height(610 / 1600 * 1200);
+            } else if (1200 < w && w < 1440) {
+                $banner.height(610 / 1600 * w);
+                // $banner.height(610 / 1920 * 1200); // 使用固定值可能更合适?
+            } else if (1440 <= w && w <= 1920) {
+                $banner.height(610);
+            } else if (w > 1920) {
+                $banner.height(610 / 1920 * w);
+            }
+
+        }
+    </script>
 </body>
 </html>
