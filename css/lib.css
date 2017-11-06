@@ -186,8 +186,9 @@ img{max-width: 100%;
 }
 
 .footer{
-    height: 358px;
+    /*height: 358px;*/
     background-color: #1f2d48;
+    padding-bottom: 64px;
 }
 .fd-logo{
     width: 127px;
@@ -211,7 +212,22 @@ img{max-width: 100%;
     -ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity= 50)';
     filter:progid:DXImageTransform.Microsoft.Alpha(Opacity= 50);
 }
-
+.fd-fx .item{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 0 50px;
+}
+.fd-fx .item p {
+    color: #d6d6d6;
+    margin-top: 8px;
+}
+.fd-fx .item .app {
+    width: 92px;
+    height: 92px;
+    padding: 4px;
+    background-color: #fff;
+}
 
 .fd-fx{
     margin-top: 55px;
