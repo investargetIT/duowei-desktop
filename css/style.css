@@ -340,6 +340,9 @@ width: 1100px;
     color: #333;
 
 }
+.img-xtxt .tit h4:hover{
+    color: #00608d;
+}
 .img-xtxt .tit em{
     display: block;
     font-size: 14px;
