@@ -902,3 +902,28 @@ transform-origin: 50% 50%;
 
 
 
+/* 2017/11/20 */
+
+.ban.ban2 {height: 610px;}
+.m-article {padding: 70px;}
+.m-article h1 {font-size: 36px;line-height: 50px;padding: 9px 0;letter-spacing: 2px;color: #00608d;font-weight: normal;}
+.m-article .info {padding: 6px 0 20px;border-bottom: 2px solid #6f7685;line-height: 32px;height: 32px;color: #ababab;}
+.m-article .info {display: none;}
+.m-article .info span {margin-right: 18px;}
+.m-article .tool {float: right;}
+.m-article .tool .bdsharebuttonbox {float: right;}
+.m-article .tool .bdsharebuttonbox .bds_more {background: url(../images/icon-share.png) no-repeat center center;margin: 0;width: 32px;height: 32px;padding: 0;}
+.m-article .tool .print {float: left;width: 32px;height: 32px;background: url(../images/icon-print.png) no-repeat center center;}
+.m-article .tool .print:hover {opacity: .8; filter: alpha(opacity=80);}
+.m-article .cont {padding-top: 34px;font-size: 16px;line-height: 1.9em;color: #4c4e52;}
+/* .m-article .cont img {display: block;} */
+.m-article .cont img {display: block;width: 600px;margin: 20px auto;}
+.other-news li {border-bottom: 1px solid #e2e2e2;padding: 38px 0 42px;}
+.other-news .tit {line-height: 35px;border-left: 3px solid #00608d;margin-bottom: 35px;}
+.other-news .tit a {display: block;overflow: hidden; text-overflow: ellipsis; white-space: nowrap;padding-left: 20px;font-size: 24px;color: #1d1e20;}
+.other-news .tit a:hover {color: #00608d;}
+.other-news .desc {font-size: 16px;line-height: 30px;color: #4c4e52;overflow : hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3;}
+.btn-return {display: block;width: 158px;line-height: 43px;border-radius: 45px;height: 43px;border: 1px solid #00608d;text-align: center;margin: 78px auto;}
+.btn-return span {padding-left: 37px;background: url(../images/icon-return.png) no-repeat left center;font-size: 16px;color: #00608d;}
+.btn-return:hover {background-color: #00608d;}
+.btn-return:hover span {color: #fff;background-image: url(../images/icon-return-hover.png);}
