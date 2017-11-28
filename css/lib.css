@@ -70,6 +70,7 @@ img{max-width: 100%;
     border-radius: 2px;
     border: 1px solid #00608d;
 }
+.so{display: none;} /*搜索功能尚未实现，暂时隐藏搜索框*/
 .so input{
     float: left;font-size: 14px;
 }

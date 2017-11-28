@@ -93,7 +93,7 @@
 	text-overflow: ellipsis;
 	text-align: right;
 }
-.ul-addr .addr a{
+.ul-addr .addr span{
 	padding-left: 30px;
 	background: url(../images/adress.png) no-repeat 0;
 	color: #8f8f8f;
