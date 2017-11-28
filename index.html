@@ -390,7 +390,10 @@
             } else if (w > 1920) {
                 $banner.height(610 / 1920 * w);
             }
-
+        }
+        // 移动端 fix background-attachment
+        if (navigator.userAgent.indexOf('Mobile') > -1) {
+            $('.row1').css('background-attachment', 'initial');
         }
     </script>
 </body>

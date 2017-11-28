@@ -156,6 +156,10 @@ img{max-width: 100%;
     float: left;
 }
 
+.ul-icoli {
+    max-width: 660px;
+}
+
 .ul-icoli li{
     position: relative;
 
